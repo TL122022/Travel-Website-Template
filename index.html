@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Travel Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <!----------- PRELOADER ------------>
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+
+        <!--------- SCROLL TO TOP BUTTON --------->
+        <div id="scrollTop" onclick="scrollToTop()">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </div>
+
+        <!------------- HEADER ------------->
+        <div class="mainHeader">
+            <nav id="header">
+                <ul>
+                    <li><h2 onclick="scrollToTop()">TR𝔸𝕍EL</h2></li>
+                    <li class="pages" onclick="scrollToAbout()">ABOUT</li>
+                    <li class="pages" onclick="scrollToExplore()">EXPLORE</li>
+                    <li class="pages" onclick="scrollToTour()">TOUR</li>
+                    <li class="pages" onclick="scrollToIslands()">ISLANDS</li>
+                    <li class="pages" onclick="scrollToBooking()">BOOKING</li>
+                </ul>
+            </nav>
+            <div class="header">
+                <h2>Explore the world <br> with TR𝔸𝕍EL</h2>
+                <p>Book trips to embark on a journey around the world <br>and enjoy your vacations!</p>
+                <button onclick="scrollToAbout()">Find out more</button>
+            </div>
+        </div>
+        <!------------- HEADER------------->
+        <hr>
+        <!------------- ABOUT ------------->
+        <div class="textSection" id="about">
+            <div class="content">
+                <h2>About The Islands</h2>
+                <p>
+                    Explore and reserve your trip to wonderful islands! Enjoy the sceneries of the oceans and book tours for more relaxation!
+                </p>
+                <button>Reserve now!</button>
+            </div>
+            <img src="island1.jpg" id="island1">
+            <img src="island4-JezeraneCroatia.jpg" id="island2">
+        </div>
+        <!------------- ABOUT------------->
+        <hr>
+        <!------------- EXPLORE ------------->
+        <div class="textSection" id="explore">
+            <h2>Explore</h2>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="island5-Sukakarya,Aceh,Indonesia.jpg">
+                        <p>Sukakarya Aceh, Indonesia</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="island6-Daerah-Khusus-Ibukota-Jakarta,Indonesia.jpg">
+                        <p>Daerah Khusus Ibukota Jakarta, Indonesia</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="island2.jpg">
+                        <p>Island Reef</p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!------------- EXPLORE ------------->
+        <hr>
+        <!------------- TOUR ------------->
+        <div class="textSection" id="tour">
+            <div class="content">
+                <h2>High Quality Tours</h2>
+                <p>We provide guided tours around multiple islands. You will learn magnificent things about the islands by our experienced tour guides.</p>
+            </div>
+            <video src="boat-view.mp4" muted loop></video>
+            <span id="playpause">
+                <ion-icon name="play-outline" id="playbtn"></ion-icon>
+                <ion-icon name="pause-outline" id="pausebtn"></ion-icon>
+            </span>
+        </div>
+        <!------------- TOUR ------------->
+        <hr>
+        <!------------- ISLANDS ------------->
+        <div class="textSection" id="islands">
+            <h2>Islands</h2>
+            <p>Choose Your Favourite Island For An Awesome Journey!</p>
+            <div class="islandsChoice">
+                <div class="islandImg">
+                    <img src="island7-Grainau,Germany.jpg">
+                    <p>Grainau, Germany <br> Adventurous Woods</p>
+                </div>
+                <div class="islandImg">
+                    <img src="island8-snow.jpg">
+                    <p>Snow Island <br> Cool Weather</p>
+                </div>
+                <div class="islandImg">
+                    <img src="island12-river.jpg">
+                    <p>Stream In Spring<br> Beautiful Nature</p>
+                </div>
+                <div class="islandImg">
+                    <img src="island9-Banten,Indonesia.jpg" id="flexShrink">
+                    <p>Banten, Indonesia <br> Small Mountains</p>
+                </div>
+                <div class="islandImg">
+                    <img src="island10.jpg">
+                    <p>Sunset Seashore <br> Wonderful Views</p>
+                </div>
+                <div class="islandImg">
+                    <img src="island13-Martinique.jpg">
+                    <p>Martinique <br>Relaxation</p>
+                </div>
+            </div>
+        </div>
+        <!------------- ISLANDS ------------->
+        <hr>
+        <!------------- BOOKING ------------->
+        <div class="textSection" id="booking">
+            <h2>Booking</h2>
+            <p>Book Your Trips <a href='#'>here</a> now!</p>
+        </div>
+        <!------------- BOOKING ------------->
+        <hr>
+        <!------------- FOOTER ------------->
+        <div class="textSection footer">
+            <h2>TR𝔸𝕍EL</h2>
+            <div class="links-section">
+                <ul>
+                    <h3>Company</h3>
+                    <li><a href='#'>Our Team</a></li>
+                    <li><a href='#'>Our Journey</a></li>
+                    <li><a href='#'>Our Services</a></li>
+                </ul>
+                <ul>
+                    <h3>Support</h3>
+                    <li><a href='#'>Help Centre</a></li>
+                    <li><a href='#'>Donate</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------- FOOTER ------------->
+        
+
+        <script>
+            /* ------------- PRELOADER ------------- */
+            let loader = document.querySelector('.preloader');
+
+            window.addEventListener('load', function() {
+                loader.style.display = 'none';
+            })
+
+
+            
+            /* ------------- SCROLL TO TOP BUTTON CHANGE ------------- */
+
+            function showScrollToTopBtn() {
+                if (document.body.scrollTop > 400 || 
+                document.documentElement.scrollTop > 400) {
+                    document.getElementById('scrollTop').style.opacity = '1';
+                } else {
+                    document.getElementById('scrollTop').style.opacity = '0';
+                }
+            }
+
+            window.addEventListener('scroll', showScrollToTopBtn);
+
+            /* ------------- HEADER CHANGE ------------- */
+            let pages = document.querySelectorAll('.pages');
+
+            function changeHeader() {
+                if (document.body.scrollTop > 150 || 
+                document.documentElement.scrollTop > 150) {
+                    document.querySelector('nav').classList.add('change-header');
+                    document.querySelector('h2').classList.add('change-header');
+
+                    pages.forEach((item) => {
+                        item.style.color = '#fff';
+                    })
+                }  
+                else {
+                    document.querySelector('nav').classList.remove('change-header');
+                    document.querySelector('h2').classList.remove('change-header');
+
+                    pages.forEach((item) => {
+                        item.style.color = '#000';
+                    })
+                }
+            }
+
+            window.addEventListener('scroll', changeHeader);
+
+
+            /* ------------- IMAGE APPEAR FRONT ON HOVER ------------- */
+            let island1 = document.getElementById('island1');
+            let island2 = document.getElementById('island2');
+
+            island2.addEventListener('mouseover', function(event) {
+                island2.style.zIndex = '4';
+            })
+            island2.addEventListener('mouseout', function(event) {
+                island2.style.zIndex = '1';
+            })
+
+
+
+            /* ------------- SWIPER FOR EXPLORE ------------- */
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: false,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 20,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+
+            /* ------------- START VIDEO ------------- */
+            let video = document.querySelector('video');
+            let playpause = document.getElementById('playpause');
+            let playbtn = document.getElementById('playbtn');
+            let pausebtn = document.getElementById('pausebtn');
+
+            function playPause() {
+                if (video.paused) {
+                    video.play();
+
+                    //CHANGE ICON
+                    pausebtn.style.visibility = 'visible';
+                    pausebtn.style.opacity = '1';
+                    playbtn.style.visibility = 'hidden';
+                    playbtn.style.opacity = '0';
+                } else {
+                    video.pause();
+
+                    //CHANGE ICON
+                    pausebtn.style.visibility = 'hidden';
+                    pausebtn.style.opacity = '0';
+                    playbtn.style.visibility = 'visible';
+                    playbtn.style.opacity = '1';
+                }
+            }
+            playpause.addEventListener('click', playPause);
+
+
+            /* ------------- SCROLL ------------- */
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+            }
+
+            function scrollToAbout() {
+                var about = document.getElementById('about');
+                about.scrollIntoView();
+            }
+            function scrollToExplore() {
+                var explore = document.getElementById('explore');
+                explore.scrollIntoView();
+            }
+            function scrollToTour() {
+                var tour = document.getElementById('tour');
+                tour.scrollIntoView();
+            }
+            function scrollToIslands() {
+                var islands = document.getElementById('islands');
+                islands.scrollIntoView();
+            }
+            function scrollToBooking() {
+                var booking = document.getElementById('booking');
+                booking.scrollIntoView();
+            }
+
+        </script>
+    </body>
+</html>
