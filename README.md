@@ -14,4 +14,4 @@ Contains:
 ![Travel-Website](https://user-images.githubusercontent.com/101867993/200461495-b165862e-78c7-4334-9074-85d3f9835476.png)
 
 
-Images by pexels.com
+Images on website by pexels.com
